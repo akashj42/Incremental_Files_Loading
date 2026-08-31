@@ -1,0 +1,22 @@
+Case ID,Case Number,Account ID,Contact ID,Subject,Description,Status,Priority,Origin,Type,Created Date,Closed Date
+CAS-080,80,ACC-005,CON-005,Unable to access dashboard,Customer reported an issue and requested assistance from the support team.,New,Low,Web,Problem,4/23/2026,
+CAS-081,81,ACC-006,CON-006,Integration configuration issue,Support request logged after a discussion with the account team.,Closed,Critical,Email,Question,5/1/2026,5/4/2026
+CAS-082,82,ACC-007,CON-007,Data import failed,Customer needs guidance on configuration and next steps.,Escalated,High,Phone,Feature Request,6/6/2026,
+CAS-083,83,ACC-008,CON-008,Unexpected application error,Issue reproduced with the details supplied; follow-up is in progress.,Working,Medium,Chat,Problem,7/11/2026,
+CAS-084,84,ACC-009,CON-009,Password reset assistance,Customer reported an issue and requested assistance from the support team.,New,Low,Web,Question,1/16/2026,
+CAS-085,85,ACC-010,CON-010,Billing question,Support request logged after a discussion with the account team.,Closed,Critical,Email,Feature Request,2/21/2026,2/24/2026
+CAS-086,86,ACC-011,CON-011,Report export is incomplete,Customer needs guidance on configuration and next steps.,Escalated,High,Phone,Problem,3/26/2026,
+CAS-087,87,ACC-012,CON-012,Request for feature enhancement,Issue reproduced with the details supplied; follow-up is in progress.,Working,Medium,Chat,Question,4/4/2026,
+CAS-088,88,ACC-013,CON-013,Unable to access dashboard,Customer reported an issue and requested assistance from the support team.,New,Low,Web,Feature Request,5/9/2026,
+CAS-089,89,ACC-014,CON-014,Integration configuration issue,Support request logged after a discussion with the account team.,Closed,Critical,Email,Problem,6/14/2026,6/17/2026
+CAS-090,90,ACC-015,CON-015,Data import failed,Customer needs guidance on configuration and next steps.,Escalated,High,Phone,Question,7/19/2026,
+CAS-091,91,ACC-016,CON-016,Unexpected application error,Issue reproduced with the details supplied; follow-up is in progress.,Working,Medium,Chat,Feature Request,1/24/2026,
+CAS-092,92,ACC-017,CON-017,Password reset assistance,Customer reported an issue and requested assistance from the support team.,New,Low,Web,Problem,2/2/2026,
+CAS-093,93,ACC-018,CON-018,Billing question,Support request logged after a discussion with the account team.,Closed,Critical,Email,Question,3/7/2026,3/10/2026
+CAS-094,94,ACC-019,CON-019,Report export is incomplete,Customer needs guidance on configuration and next steps.,Escalated,High,Phone,Feature Request,4/12/2026,
+CAS-095,95,ACC-020,CON-020,Request for feature enhancement,Issue reproduced with the details supplied; follow-up is in progress.,Working,Medium,Chat,Problem,5/17/2026,
+CAS-096,96,ACC-021,CON-021,Unable to access dashboard,Customer reported an issue and requested assistance from the support team.,New,Low,Web,Question,6/22/2026,
+CAS-097,97,ACC-022,CON-022,Integration configuration issue,Support request logged after a discussion with the account team.,Closed,Critical,Email,Feature Request,7/27/2026,7/28/2026
+CAS-098,98,ACC-023,CON-023,Data import failed,Customer needs guidance on configuration and next steps.,Escalated,High,Phone,Problem,1/5/2026,
+CAS-099,99,ACC-024,CON-024,Unexpected application error,Issue reproduced with the details supplied; follow-up is in progress.,Working,Medium,Chat,Question,2/10/2026,
+CAS-100,100,ACC-025,CON-025,Password reset assistance,Customer reported an issue and requested assistance from the support team.,New,Low,Web,Feature Request,3/15/2026,

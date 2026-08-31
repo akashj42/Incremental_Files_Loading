@@ -1,0 +1,17 @@
+Account ID,Account Name,Industry,Phone,Website,Billing City,Billing State,Annual Revenue,Number of Employees,Type,Created Date
+ACC-010,Lighthouse Analytics,Financial Services,-664,lighthouseanalytics.example.com,Denver,CO,2350000,195,Prospect,4/4/2026
+ACC-011,Vertex Health,Media,-665,vertexhealth.example.com,Seattle,WA,2535000,212,Partner,5/7/2026
+ACC-012,Willow Industries,Manufacturing,-666,willowindustries.example.com,Boston,MA,2720000,229,Customer,6/10/2026
+ACC-013,Pioneer Solutions,Healthcare,-667,pioneersolutions.example.com,Chicago,IL,2905000,246,Prospect,7/13/2026
+ACC-014,Redwood Logistics,Logistics,-668,redwoodlogistics.example.com,Atlanta,GA,3090000,263,Partner,1/16/2026
+ACC-015,Silverline Consulting,Retail,-669,silverlineconsulting.example.com,Portland,OR,3275000,280,Customer,2/19/2026
+ACC-016,Meadow Ventures,Technology,-670,meadowventures.example.com,Raleigh,NC,3460000,297,Prospect,3/22/2026
+ACC-017,Skybridge Systems,Education,-671,skybridgesystems.example.com,Austin,TX,3645000,314,Partner,4/25/2026
+ACC-018,Oakstone Foods,Financial Services,-672,oakstonefoods.example.com,Denver,CO,3830000,331,Customer,5/1/2026
+ACC-019,Ironclad Networks,Media,-673,ironcladnetworks.example.com,Seattle,WA,4015000,348,Prospect,6/4/2026
+ACC-020,Juniper Analytics,Manufacturing,-674,juniperanalytics.example.com,Boston,MA,4200000,365,Partner,7/7/2026
+ACC-021,Clearwater Health,Healthcare,-675,clearwaterhealth.example.com,Chicago,IL,4385000,382,Customer,1/10/2026
+ACC-022,Stonegate Industries,Logistics,-676,stonegateindustries.example.com,Atlanta,GA,4570000,399,Prospect,2/13/2026
+ACC-023,Aurora Solutions,Retail,-677,aurorasolutions.example.com,Portland,OR,4755000,416,Partner,3/16/2026
+ACC-024,Westfield Logistics,Technology,-678,westfieldlogistics.example.com,Raleigh,NC,4940000,433,Customer,4/19/2026
+ACC-025,Crestview Consulting,Education,-679,crestviewconsulting.example.com,Austin,TX,5125000,450,Prospect,5/22/2026
