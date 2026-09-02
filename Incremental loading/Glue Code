@@ -1,0 +1,192 @@
+import sys
+
+from awsglue.utils import getResolvedOptions
+from awsglue.context import GlueContext
+from awsglue.job import Job
+
+from pyspark.context import SparkContext
+
+
+# ---------------------------------------------------------
+# 1. Get Glue Job arguments
+# ---------------------------------------------------------
+
+args = getResolvedOptions(
+    sys.argv,
+    ["JOB_NAME"]
+)
+
+
+# ---------------------------------------------------------
+# 2. Initialize Spark / Glue
+# ---------------------------------------------------------
+
+sc = SparkContext()
+
+glueContext = GlueContext(sc)
+
+spark = glueContext.spark_session
+
+job = Job(glueContext)
+
+job.init(
+    args["JOB_NAME"],
+    args
+)
+
+
+# ---------------------------------------------------------
+# 3. Source and Destination
+# ---------------------------------------------------------
+
+SOURCE_BUCKET = "s3://incrementalsource"
+
+DESTINATION_BUCKET = "s3://incrementaldestination"
+
+
+# ---------------------------------------------------------
+# 4. Account
+# ---------------------------------------------------------
+
+account_df = glueContext.create_dynamic_frame.from_options(
+
+    connection_type="s3",
+
+    connection_options={
+        "paths": [
+            f"{SOURCE_BUCKET}/Account/"
+        ]
+    },
+
+    format="csv",
+
+    format_options={
+        "withHeader": True,
+        "separator": ",",
+        "optimizePerformance": True
+    },
+
+    transformation_ctx="account_source"
+)
+
+
+glueContext.write_dynamic_frame.from_options(
+
+    frame=account_df,
+
+    connection_type="s3",
+
+    connection_options={
+        "path": f"{DESTINATION_BUCKET}/Account/"
+    },
+
+    format="csv",
+
+    format_options={
+        "writeHeader": True,
+        "separator": ","
+    },
+
+    transformation_ctx="account_target"
+)
+
+
+# ---------------------------------------------------------
+# 5. Case
+# ---------------------------------------------------------
+
+case_df = glueContext.create_dynamic_frame.from_options(
+
+    connection_type="s3",
+
+    connection_options={
+        "paths": [
+            f"{SOURCE_BUCKET}/Case/"
+        ]
+    },
+
+    format="csv",
+
+    format_options={
+        "withHeader": True,
+        "separator": ",",
+        "optimizePerformance": True
+    },
+
+    transformation_ctx="case_source"
+)
+
+
+glueContext.write_dynamic_frame.from_options(
+
+    frame=case_df,
+
+    connection_type="s3",
+
+    connection_options={
+        "path": f"{DESTINATION_BUCKET}/Case/"
+    },
+
+    format="csv",
+
+    format_options={
+        "writeHeader": True,
+        "separator": ","
+    },
+
+    transformation_ctx="case_target"
+)
+
+
+# ---------------------------------------------------------
+# 6. Contact
+# ---------------------------------------------------------
+
+contact_df = glueContext.create_dynamic_frame.from_options(
+
+    connection_type="s3",
+
+    connection_options={
+        "paths": [
+            f"{SOURCE_BUCKET}/Contact/"
+        ]
+    },
+
+    format="csv",
+
+    format_options={
+        "withHeader": True,
+        "separator": ",",
+        "optimizePerformance": True
+    },
+
+    transformation_ctx="contact_source"
+)
+
+
+glueContext.write_dynamic_frame.from_options(
+
+    frame=contact_df,
+
+    connection_type="s3",
+
+    connection_options={
+        "path": f"{DESTINATION_BUCKET}/Contact/"
+    },
+
+    format="csv",
+
+    format_options={
+        "writeHeader": True,
+        "separator": ","
+    },
+
+    transformation_ctx="contact_target"
+)
+
+
+# ---------------------------------------------------------
+# 7. Commit job bookmark
+# ---------------------------------------------------------
+
+job.commit()
