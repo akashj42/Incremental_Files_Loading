@@ -1,0 +1,10 @@
+Glue:
+AmazonS3FullAccess
+AWSGlueConsoleFullAccess
+AWSGlueServiceRole
+AWSLambda_FullAccess
+
+Lambda:
+AmazonS3FullAccess
+AWSGlueConsoleFullAccess
+AWSGlueServiceRole
